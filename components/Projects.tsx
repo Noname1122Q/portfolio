@@ -9,9 +9,8 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 const projectDetails = [
   {
     title: "Quizy",
-    image:
-      "https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg",
-    stack: ["Next", "PostgreSQL"],
+    image: "./projects/quizy.png",
+    stack: ["Next", "Postgres", "Gemini"],
     points: [
       "An AI-powered platform for creating and participating in quizzes.",
       "Allows users to generate quizzes on any topic using AI technology.",
@@ -25,8 +24,7 @@ const projectDetails = [
   },
   {
     title: "Netflix Recommendation Algorithm",
-    image:
-      "https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg",
+    image: "./projects/nfx.png",
     stack: ["Python", "Jupyter", "Pandas"],
     points: [
       "Recommends personalized movie suggestions based on user preferences.",
@@ -44,18 +42,18 @@ const projectDetails = [
     ],
   },
   {
-    title: "Online Chess Game",
+    title: "Artsy Home Decor",
     image:
       "https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg",
-    stack: ["Next", "Websockets", "ShadcnUI"],
+    stack: ["Next", "Authjs", "Postgres"],
     points: [
-      "A fully functional multiplayer chess game with real-time gameplay.",
-      "Includes built-in validation to ensure legal moves during play.",
-      "Leverages optimized WebSockets for fast and seamless player interactions.",
-      "Future updates planned to introduce new game modes and features.",
+      "Website for home decor startup that I am planning to launch.",
+      "Best authentication practices including 2FA.",
+      "Seperate dashboards for admin and customer.",
+      "Modular UI components to provide an easy to update UI.",
     ],
     hostedLink: "",
-    githubLink: "https://github.com/Noname1122Q/chess-game",
+    githubLink: "",
     isUnderDevelopment: false,
     carouselImages: [],
   },
@@ -72,7 +70,7 @@ const projectDetails = [
     ],
     hostedLink: "",
     githubLink: "https://github.com/Noname1122Q/EffortlessUI",
-    isUnderDevelopment: true,
+    isUnderDevelopment: false,
     carouselImages: [],
   },
 ];
@@ -115,7 +113,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="object-contain rounded-lg"
+                    className="object-fill rounded-lg"
                   />
                 </DialogContent>
               </Dialog>
