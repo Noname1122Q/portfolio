@@ -4,7 +4,6 @@ import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { Badge } from "./ui/badge";
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "./ui/dialog";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 const projectDetails = [
   {
@@ -96,20 +95,6 @@ const Projects = () => {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogTitle></DialogTitle>
-                  {/* <Carousel>
-                    <CarouselContent>
-                      {project.carouselImages &&
-                        project.carouselImages.map((image) => (
-                          <CarouselItem>
-                            <img
-                              src={image}
-                              alt="img"
-                              className="object-contain rounded-lg"
-                            />
-                          </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                  </Carousel> */}
                   <img
                     src={project.image}
                     alt={project.title}
